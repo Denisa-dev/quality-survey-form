@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div id="overlay-color">
+        <main>
+            <h1 id="title">qualityPage Survey Form</h1>
+            <p id="description">Thank you for taking the time to help me improve myself</p>
+        </main>
+
+        <div id="div-form">
+            <form id="survey-form">
+                <label id="name-label" for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                <label id="email-label" for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+                <label id="number-label" for="number">Age (optional)</label><br>
+                <input type="number" placeholder="Enter your age" id="number" name="number" min=15 max=65><br>
+                <label for="dropdown">Which option from the list describes you current role?</label><br>
+                <select id="dropdown" name="dropdown">
+                    <option value="text" selected disabled>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-employee">Full Time Employee</option>
+                    <option value="teacher">College Teacher</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label id="radio-options">Would you recommend me to a client?</label><br>
+                <input type="radio" id="radio-absolutely" name="radio-endorsement" value="absolutely">
+                <label for="radio-absolutely">Absolutely</label><br>
+                <input type="radio" id="radio-maybe" name="radio-endorsement" value="maybe">
+                <label for="radio-maybe">Maybe</label><br>
+                <input type="radio" id="radio-uncertain" name="radio-endorsement" value="uncertain">
+                <label for="radio-uncertain">Not sure</label><br>
+                <label for="opinion">How would you describe this page?</label><br>
+                <select id="opinion" name="opinion">
+                    <option value="text" selected disabled>Select your opinion</option>
+                    <option value="modern">Modern</option>
+                    <option value="classic">Classic</option>
+                    <option value="professionaly">Professionaly</option>
+                    <option value="needs-improvement">Needs improvement</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <label id="check-options">What would you like see improved? <span id="span-checkbox-apply">(Check
+                        all
+                        that apply)</span></label><br>
+                <input type="checkbox" id="checkbox-style" name="checkbox-style" value="style">
+                <label for="checkbox-style">The style of the page</label><br>
+                <input type="checkbox" id="checkbox-animation" name="checkbox-animation" value="animation">
+                <label for="checkbox-animation">The animations</label><br>
+                <input type="checkbox" id="checkbox-responsive" name="checkbox-responsive" value="responsive">
+                <label for="checkbox-responsive">More responsive</label><br>
+                <input type="checkbox" id="checkbox-font" name="checkbox-font" value="fonts">
+                <label for="checkbox-font">The fonts</label><br>
+                <label>Any suggestion that you would like to share?</label><br>
+                <textarea id="textarea-suggest" placeholder="Enter your suggestions here..." cols="40"></textarea><br>
+                <input type="submit" id="submit" value="Submit"><br>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

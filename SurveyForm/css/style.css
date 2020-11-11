@@ -1,0 +1,143 @@
+body {
+    font-size      : 10px;
+    background     : rgb(251, 222, 188) url('../images/workplace.jpg');
+    display        : flex;
+    justify-content: center;
+    color          : white;
+    font-family    : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align     : center;
+}
+
+#title {
+    font-size  : 28px;
+    padding-top: 50px;
+    line-height: 0.5em;
+}
+
+#description {
+    font-size  : 18px;
+    font-style : italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#overlay-color {
+    position  : absolute;
+    left      : 0;
+    right     : 0;
+    top       : 0;
+    bottom    : 0;
+    background: rgba(74, 63, 142, 0.772);
+    overflow  : auto;
+}
+
+#div-form {
+    background    : rgba(23, 21, 41, 0.655);
+    font-size     : 20px;
+    width         : 700px;
+    margin        : auto;
+    padding-top   : 40px;
+    padding-bottom: 35px;
+    border-radius : 3px;
+    margin-top    : 45px;
+}
+
+@media (min-width :500px) {
+    #div-form {
+        min-width : 200px;
+        min-height: 120px;
+    }
+}
+
+#survey-form {
+    display     : inline-block;
+    margin-left : auto;
+    margin-right: auto;
+    text-align  : left;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=submit],
+textarea,
+select {
+    width        : 590px;
+    height       : 35px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    margin-top   : 8px;
+    font-family  : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size    : 20px;
+    color        : rgb(98, 99, 99);
+}
+
+select {
+    width : 598px;
+    height: 38px;
+}
+
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=submit]:focus,
+textarea:focus,
+select:focus {
+    outline   : none !important;
+    border    : 1px solid rgb(67, 58, 128);
+    box-shadow: 0 0 6px #5a81ab;
+}
+
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=number]::placeholder,
+textarea::placeholder,
+select {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size  : 17px;
+    color      : rgb(98, 99, 99);
+    padding    : 5px;
+}
+
+input[type=submit] {
+    color           : white;
+    background-color: rgb(20, 171, 116);
+    border-color    : rgb(20, 171, 116);
+    width           : 600px;
+    height          : 45px;
+}
+
+input[type=submit]:hover {
+    color           : white;
+    background-color: rgb(14, 145, 97);
+    border-color    : rgb(17, 130, 89);
+    cursor          : pointer;
+}
+
+#textarea-suggest {
+    resize       : vertical;
+    min-height   : 100px;
+    border-radius: 0px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-bottom: 10px;
+}
+
+#checkbox-style,
+#radio-absolutely {
+    margin-top: 15px;
+}
+
+#checkbox-font {
+    margin-bottom: 50px;
+}
+
+#radio-uncertain {
+    margin-bottom: 20px;
+}
+
+#span-checkbox-apply {
+    font-size: 17px;
+}
